@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <!-- Блок с названием страницы -->
+    <h1>{% block pagename %}{% endblock %}</h1>
+    <!-- Блок формирования меню -->
+    {% block menu %}
+    <nav>
+        <ul>
+            <li>
+                <a href="http://127.0.0.1:8000/task1/platform/">Главная</a>
+                <button disabled>Главная</button>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:8000/task1/games/">Магазин</a>
+                <button disabled>Магазин</button>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:8000/task1/cart/">Купить</a>
+                <button disabled>Купить</button>
+            </li>
+        </ul>
+    </nav>
+    {% endblock %}
+    <!-- Блок формирования контента -->
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
+
