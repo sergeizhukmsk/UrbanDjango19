@@ -1,3 +1,5 @@
+import os
+import django
 from task1.models import Post
 
 # Создаём объекты

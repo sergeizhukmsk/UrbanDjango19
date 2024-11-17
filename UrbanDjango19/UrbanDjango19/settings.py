@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.core.paginator',  # добавляем пагинатор
     'task1',  # Запускаемое приложение на Django
 ]
 
